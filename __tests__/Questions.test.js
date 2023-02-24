@@ -79,6 +79,18 @@ it("Can get the intern school question", () => {
 
 });
 
+it("Can get the questions for the Manager", () => {
+  const testValue = [
+    {type : 'input',  message : "Enter manager's name:", name : 'name'},
+    {type : 'input',  message : 'Enter ID:', name : 'id'},
+    {type : 'input',  message : 'Enter email address:', name : 'email'},
+    {type : 'input',  message : 'Enter office number:', name : 'officeNumber'}
+  ]
+  const e = new Questions('manager');
+  expect(e.getQuestions()).toMatchObject(testValue);
+
+});
+
 
 
 
