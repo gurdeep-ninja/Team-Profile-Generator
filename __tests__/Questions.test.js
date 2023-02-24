@@ -91,6 +91,30 @@ it("Can get the questions for the Manager", () => {
 
 });
 
+it("Can get the questions for the Engineer", () => {
+  const testValue = [
+    {type : 'input',  message : "Enter engineer's name:", name : 'name'},
+    {type : 'input',  message : 'Enter ID:', name : 'id'},
+    {type : 'input',  message : 'Enter email address:', name : 'email'},
+    {type : 'input',  message : 'Enter Github username:', name : 'github'}
+  ]
+  const e = new Questions('engineer');
+  expect(e.getQuestions()).toMatchObject(testValue);
+
+});
+
+it("Can get the questions for the Intern", () => {
+  const testValue = [
+    {type : 'input',  message : "Enter intern's name:", name : 'name'},
+    {type : 'input',  message : 'Enter ID:', name : 'id'},
+    {type : 'input',  message : 'Enter email address:', name : 'email'},
+    {type : 'input',  message : 'Enter School:', name : 'school'}
+  ]
+  const e = new Questions('intern');
+  expect(e.getQuestions()).toMatchObject(testValue);
+
+});
+
 
 
 
