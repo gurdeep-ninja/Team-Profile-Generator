@@ -19,6 +19,13 @@ it("Can set employee type", () => {
   expect(e.employeeType).toBe(testValue);
 });
 
+it("Can get question for Manager's name", () => {
+    const testValue = "Enter manager's name:";
+    const e = new Questions('manager');
+    const nameQuestion = e.getNameQuestion()
+    expect(nameQuestion.message).toBe(testValue);
+});
+
 
 // test("Can set school via constructor", () => {
 //     const testValue = "UCLA";
