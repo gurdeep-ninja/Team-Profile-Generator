@@ -87,7 +87,7 @@ it("Can get the questions for the Manager", () => {
     {type : 'input',  message : 'Enter office number:', name : 'officeNumber'}
   ]
   const e = new Questions('manager');
-  expect(e.getQuestions()).toMatchObject(testValue);
+  expect(e.getEmployeeQuestions()).toMatchObject(testValue);
 
 });
 
@@ -99,7 +99,7 @@ it("Can get the questions for the Engineer", () => {
     {type : 'input',  message : 'Enter Github username:', name : 'github'}
   ]
   const e = new Questions('engineer');
-  expect(e.getQuestions()).toMatchObject(testValue);
+  expect(e.getEmployeeQuestions()).toMatchObject(testValue);
 
 });
 
@@ -111,6 +111,24 @@ it("Can get the questions for the Intern", () => {
     {type : 'input',  message : 'Enter School:', name : 'school'}
   ]
   const e = new Questions('intern');
-  expect(e.getQuestions()).toMatchObject(testValue);
+  expect(e.getEmployeeQuestions()).toMatchObject(testValue);
+
+});
+
+it("Can get the questions for the team menu", () => {
+  const testValue = [
+            {
+                type: 'list',
+                message: 'Would you like to add team members?',
+                choices: [
+                    "Engineer",
+                    "Intern",
+                    "I have finish building the team."
+                ],
+                name: 'choices',
+            }
+        ];
+  const e = new Questions('intern');
+  expect(e.getTeamQuestions()).toMatchObject(testValue);
 
 });
