@@ -17,6 +17,8 @@ const render = require("./src/page-template.js");
 
 function init() {
 
+    const 
+
     const managerQuestions = new Questions('manager');
 
     inquirer
