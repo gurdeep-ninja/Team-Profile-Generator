@@ -19,9 +19,25 @@ it("Can set employee type", () => {
   expect(e.employeeType).toBe(testValue);
 });
 
-it("Can get question for Manager's name", () => {
+it("Can get the question for Manager's name", () => {
     const testValue = "Enter manager's name:";
     const e = new Questions('manager');
+    const nameQuestion = e.getNameQuestion()
+    expect(nameQuestion.message).toBe(testValue);
+});
+
+
+it("Can get the question for Engineer's name", () => {
+    const testValue = "Enter engineer's name:";
+    const e = new Questions('engineer');
+    const nameQuestion = e.getNameQuestion()
+    expect(nameQuestion.message).toBe(testValue);
+});
+
+
+it("Can get the question for Intern's name", () => {
+    const testValue = "Enter intern's name:";
+    const e = new Questions('intern');
     const nameQuestion = e.getNameQuestion()
     expect(nameQuestion.message).toBe(testValue);
 });
