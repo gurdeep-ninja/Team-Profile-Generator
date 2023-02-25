@@ -19,13 +19,17 @@ Once you have cloned the repository, run the ```npm install``` command to downlo
 ## Usage
 To start the application, run the command ```node index.js```
 
-You will be prompted a series of questions for the sections you want generated for your README.md file.
+You will be prompted a series of questions for each of the employees' that you want generated in the HTML file.
+
+The HTML file generated will be saved in the location ```./output/team.html```
 ## License
 This app uses the following license: GNU General Public License v3.0
 ## Contributing
 To contribute to this project simply fork this repository on GitHub and create pull requests. I will then merge your changes after a review.
 ## Tests
-To run the JEST unit tests, run the command ```npm run test```
+To run the JEST unit tests, run the command ```npm run test```. 
+
+[Click here to view screenshot of test output](#screenshots).
 
 **Note:** An additional unit test was added to develop a ```Questions``` class which the app will use for the inquirer user prompts (see ```./__tests__/Questions.test.js ``` for details).
 
@@ -41,7 +45,7 @@ GitHub: [gurdeep-ninja](https://github.com/gurdeep-ninja)<br>
 
 ### Generated HTML file
 ![Screenshot of website](./assets/images/screenshot3.png)
-## Demo
-To view a demo, please click on the link below. This will take you to the screencastify.com website
+## Video Demo
+To view the video demo of the app in action, please click on the link below. This will take you to the screencastify.com website
 
 [Click here to view demo](https://watch.screencastify.com/v/qWlhIT2ElaQAyjiKSk32)
