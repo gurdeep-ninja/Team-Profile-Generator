@@ -9,7 +9,7 @@ A command line app that will gather data on the members of a software engineerin
 [Tests](#tests)<br>
 [Questions](#questions)<br>
 [Screenshots](#screenshots)<br>
-[Video](#video-demo)
+[Video demo](#video-demo)
 ## Installation
 To use this application, you must have ```node``` & ```npm``` installed.
 
