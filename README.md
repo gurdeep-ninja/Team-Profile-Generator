@@ -1,6 +1,6 @@
 # Test-Driven Development: Team Profile Generator challenge ![license](https://img.shields.io/badge/license-GNU%203.0-blue)
 ## Description
-A command line app that will gather data on the members of a software engineering team and use it to produce a web page in HTML format. This page will present individual summaries for each employee. The app also incorporates a number of unit tests built using JEST. 
+A command line app that will gather data on the members of a software engineering team and use it to produce a web page in HTML format. This page will present individual summaries for each employee. The app also incorporates a number of unit tests built using JEST.
 ## Table of Contents
 [Installation](#installation)<br>
 [Usage](#usage)<br>
@@ -9,7 +9,7 @@ A command line app that will gather data on the members of a software engineerin
 [Tests](#tests)<br>
 [Questions](#questions)<br>
 [Screenshots](#screenshots)<br>
-[Demo](#Demo)
+[Video](#video-demo)
 ## Installation
 To use this application, you must have ```node``` & ```npm``` installed.
 
